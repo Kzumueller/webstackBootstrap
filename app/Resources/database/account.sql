@@ -1,0 +1,16 @@
+CREATE TABLE `account`
+(`id` INT AUTO_INCREMENT NOT NULL,
+`company` VARCHAR(255) DEFAULT NULL,
+`vat_number` VARCHAR(50) DEFAULT NULL,
+`salutation` ENUM('m', 'f'),
+`given_name` VARCHAR(100) NOT NULL,
+`family_name` VARCHAR(100) NOT NULL,
+`address` VARCHAR(255) NOT NULL,
+`zip_code` VARCHAR(50) NOT NULL,
+`city` VARCHAR(255) NOT NULL,
+`country` VARCHAR(255) NOT NULL,
+`phone` VARCHAR(100) NOT NULL,
+`fax` VARCHAR(100) NOT NULL,
+`email` VARCHAR(255) NOT NULL,
+`password` VARCHAR(1024) NOT NULL,
+PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB;

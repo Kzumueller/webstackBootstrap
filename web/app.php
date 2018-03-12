@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use Symfony\Component\HttpFoundation\Request;
 
@@ -7,7 +7,10 @@ if (PHP_VERSION_ID < 70000) {
     include_once __DIR__.'/../var/bootstrap.php.cache';
 }
 
-$kernel = new AppKernel('prod', false);
+$env = $_SERVER['APP_ENV'] ?? 'prod';
+$debug = $_SERVER['APP_DEBUG'] ?? false;
+
+$kernel = new AppKernel($env, $debug);
 if (PHP_VERSION_ID < 70000) {
     $kernel->loadClassCache();
 }
