@@ -3,5 +3,9 @@
 {% block title %} Account Creation {% endblock %}
 
 {% block body %}
-
+    <div class="row cols-sm-6">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
 {% endblock %}

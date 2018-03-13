@@ -9,6 +9,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
@@ -49,12 +50,16 @@ class Account {
     /**
      * @ORM\Column(type="string", length=100)
      *
+     * @Assert\NotBlank()
+     *
      * @var string
      */
     private $givenName = '';
 
     /**
      * @ORM\Column(type="string", length=100)
+     *
+     * @Assert\NotBlank()
      *
      * @var string
      */
@@ -63,12 +68,16 @@ class Account {
     /**
      * @ORM\Column(type="string")
      *
+     * @Assert\NotBlank()
+     *
      * @var string
      */
     private $address = '';
 
     /**
      * @ORM\Column(type="string", length=50)
+     *
+     * @Assert\NotBlank()
      *
      * @var string
      */
@@ -77,12 +86,16 @@ class Account {
     /**
      * @ORM\Column(type="string")
      *
+     * @Assert\NotBlank()
+     *
      * @var string
      */
     private $city = '';
 
     /**
      * @ORM\Column(type="string")
+     *
+     * @Assert\Country()
      *
      * @var string
      */
@@ -91,12 +104,16 @@ class Account {
     /**
      * @ORM\Column(type="string", length=100)
      *
+     * @Assert\NotBlank()
+     *
      * @var string
      */
     private $phone = '';
 
     /**
      * @ORM\Column(type="string", length=100)
+     *
+     * @Assert\NotBlank()
      *
      * @var string
      */
@@ -105,12 +122,16 @@ class Account {
     /**
      * @ORM\Column(type="string")
      *
+     * @Assert\Email()
+     *
      * @var string
      */
     private $email = '';
 
     /**
      * @ORM\Column(type="string", length=1024)
+     *
+     * @Assert\NotBlank()
      *
      * @var string
      */
