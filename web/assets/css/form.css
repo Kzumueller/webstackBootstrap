@@ -1,0 +1,71 @@
+@import "defs/colors.css";
+
+.form__page {
+    padding: 4vh 10vw;
+    background: var(--faint-grey);
+    color: var(--text-default);
+}
+
+.form__container {
+    padding: 15vh 30vw 10vh 5vw;
+    background: white;
+}
+
+.form__headline, .form__sub-headline {
+    color: var(--saturated-blue);
+}
+
+.form__headline {
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.form__sub-headline {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.form__required-note {
+    width: 100%;
+    text-align: right;
+}
+
+.form__info {
+    margin: 2rem 0 3rem;
+}
+
+.form__button--submit {
+    width: 10vw;
+    height: 13vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: var(--saturated-blue);
+    border: 2px solid var(--saturated-blue);
+    background: white;
+
+    cursor: pointer;
+}
+
+.form__anchor--inline {
+    color: var(--snot);
+}
+
+.form__anchor--inline:hover {
+    color: var(--saturated-blue);
+}
+
+.form__container .form-control { /* beating bootstrap with specificity */
+    background: var(--faint-blue);
+    border-radius: 0;
+}
+
+.form__container .form-check {
+    display: inline;
+}
+
+.form__container .oi {
+    font-size: 80%;
+}

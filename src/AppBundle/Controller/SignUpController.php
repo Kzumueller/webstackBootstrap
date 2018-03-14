@@ -49,7 +49,7 @@ class SignUpController extends Controller {
     /**
      * @param Request $request
      * @return Response
-     * @Route("/thank-you")
+     * @Route("/thank-you", name="thank-you")
      */
     public function expressGratitude(Request $request): Response {
         return $this->render('SignUp/gratitude.html.twig');
