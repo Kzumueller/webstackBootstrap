@@ -1,18 +1,31 @@
-@import "defs/colors.css";
+@import "defs/colors.less";
 
 .form__page {
     padding: 4vh 10vw;
-    background: var(--faint-grey);
-    color: var(--text-default);
+    background: @faint-grey;
+    color: @text-default;
 }
 
 .form__container,
 .form__gratitude {
-    background: white;
+    background: @white;
 }
 
 .form__container {
     padding: 15vh 30vw 10vh 5vw;
+
+    & .form-check {
+        display: inline;
+    }
+
+    & .form__container .oi {
+        font-size: 80%;
+    }
+
+    & .form-control { /* beating bootstrap with specificity */
+        background: @faint-blue;
+        border-radius: 0;
+    }
 }
 
 .form__gratitude {
@@ -23,7 +36,7 @@
 .form__headline,
 .form__sub-headline,
 .form__gratitude {
-    color: var(--saturated-blue);
+    color: @saturated-blue;
 }
 
 .form__headline {
@@ -53,30 +66,17 @@
     justify-content: space-evenly;
     align-items: center;
 
-    color: var(--saturated-blue);
-    border: 2px solid var(--saturated-blue);
-    background: white;
+    color: @saturated-blue;
+    border: 2px solid @saturated-blue;
+    background: @white;
 
     cursor: pointer;
 }
 
 .form__anchor--inline {
-    color: var(--snot);
+    color: @snot;
 }
 
 .form__anchor--inline:hover {
-    color: var(--saturated-blue);
-}
-
-.form__container .form-control { /* beating bootstrap with specificity */
-    background: var(--faint-blue);
-    border-radius: 0;
-}
-
-.form__container .form-check {
-    display: inline;
-}
-
-.form__container .oi {
-    font-size: 80%;
+    color: @saturated-blue;
 }

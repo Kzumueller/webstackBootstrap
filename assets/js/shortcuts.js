@@ -2,9 +2,8 @@
 
 // this is some vile monkey patching, think of it what you will, I find it useful
 
-
-const qs = document.querySelector.bind(document);
-const qsa = document.querySelectorAll.bind(document);
+window.qs = document.querySelector.bind(document);
+window.qsa = document.querySelectorAll.bind(document);
 
 Element.prototype.qs = Element.prototype.querySelector;
 Element.prototype.qsa = Element.prototype.querySelectorAll;
