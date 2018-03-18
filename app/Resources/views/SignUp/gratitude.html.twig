@@ -1,7 +1,11 @@
 {% extends 'base.html.twig' %}
 
+{% trans_default_domain 'form' %}
+
 {% block body %}
     <div class="form__page">
-        <h1>You are very welcome</h1>
+        <div class="form__gratitude">
+            <h1 class="text-center">{% trans %}form.account.thankyou{% endtrans %}</h1>
+        </div>
     </div>
 {% endblock %}
