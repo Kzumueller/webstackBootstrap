@@ -1,0 +1,16 @@
+company: Firma
+vatNumber: USt-ID
+salutation: Anrede
+salutation.m: Herr
+salutation.f: Frau
+givenName: Vorname
+familyName: Nachname
+address: Straße, Nr.
+zipCode: PLZ
+city: Ort
+country: Land
+phone: Telefon
+fax: Fax
+email: E-Mail
+password: Passwort
+passwordRetype: Passwort wiederholen

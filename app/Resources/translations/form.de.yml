@@ -1,0 +1,7 @@
+form.required: Pflichtfelder
+form.privacyPolicy: Mit der Registrierung erkläre ich mich mit den <a class="form__anchor--inline" target="_blank" href="https://privacypolicies.com/generic.php">Datenschutzbestimmungen</a> einverstanden.
+form.save: Speichern
+form.passwordsMustMatch: Die eingegebenen Passwörter müssen übereinstimmen
+form.account.create: Kundenkonto erstellen
+form.account.invoiceAddress: Ihre Rechnungsadresse
+form.account.thankyou: Vielen Dank für Ihre Anmeldung, Ihre Daten werden umgehend weiterverkauft.
