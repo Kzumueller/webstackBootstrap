@@ -29,14 +29,14 @@ class Account {
     /**
      * @ORM\Column(type="string", nullable=TRUE)
      *
-     * @var string
+     * @var ?string
      */
     private $company = '';
 
     /**
      * @ORM\Column(type="string", length=50, nullable=TRUE)
      *
-     * @var string
+     * @var ?string
      */
     private $vatNumber = '';
 
@@ -152,30 +152,30 @@ class Account {
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getCompany(): string {
+    public function getCompany(): ?string {
         return $this->company;
     }
 
     /**
-     * @param string $company
+     * @param null|string $company
      */
-    public function setCompany(string $company): void {
+    public function setCompany(?string $company): void {
         $this->company = $company;
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getVatNumber(): string {
+    public function getVatNumber(): ?string {
         return $this->vatNumber;
     }
 
     /**
-     * @param string $vatNumber
+     * @param null|string $vatNumber
      */
-    public function setVatNumber(string $vatNumber): void {
+    public function setVatNumber(?string $vatNumber): void {
         $this->vatNumber = $vatNumber;
     }
 

@@ -1,24 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} Account Creation {% endblock %}
+{% block title %} {% trans %}form.account.create{% endtrans %} {% endblock %}
 
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% trans_default_domain 'form' %}
 
 {% block body %}
     <div class="form__page">
 
         <div class="form__container">
-            <h1 class="form__headline">Kundenkonto erstellen</h1>
+            <h1 class="form__headline">{% trans %}form.account.create{% endtrans %}</h1>
 
-            <h3 class="form__sub-headline">Ihre Rechnungsaddresse</h3>
+            <h3 class="form__sub-headline">{% trans %}form.account.invoiceAddress{% endtrans %}</h3>
 
             {{ form_start(form) }}
             {{ form_widget(form) }}
 
-            <div class="form__required-note">* Pflichtfelder</div>
-            <div class="form__info">Mit der Registrierung erkläre ich mich mit den <a class="form__anchor--inline" target="_blank" href="https://privacypolicies.com/generic.php">Datenschutzbestimmungen</a> einverstanden.</div>
+            <div class="form__required-note">* {% trans %}form.required{% endtrans %}</div>
+            <div class="form__info">{% trans %}form.privacyPolicy{% endtrans %}</div>
 
-            <button class="form__button--submit" type="submit"><span class="oi oi-caret-right"></span><span>Speichern</span></button>
+            <button class="form__button--submit" type="submit"><span class="oi oi-caret-right"></span><span>{% trans %}form.save{% endtrans %}</span></button>
 
             {{ form_end(form) }}
 
